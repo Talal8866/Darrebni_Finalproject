@@ -1,0 +1,29 @@
+:root{
+    --maincolor: hsla(294, 50%, 31%, 1);
+    --headercolor: hsla(295, 28%, 64%, 0.5);
+    --footercolor: hsla(200, 89%, 85%, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Alexandria;
+}
+
+@font-face {
+    font-family: Alexandria;
+    src: url(../src/assets/fonts/static/Alexandria-Regular.ttf);
+}
+
+@font-face {
+    font-family: Alexandria-light;
+    src: url(../src/assets/fonts/static/Alexandria-Light.ttf);
+}
+
+@font-face {
+    font-family: Alexandria-semibold;
+    src: url(../src/assets/fonts/static/Alexandria-SemiBold.ttf);
+}
+
+

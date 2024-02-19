@@ -1,0 +1,238 @@
+.ad-start-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 17em;
+    gap: 8rem;
+}
+
+.start{
+    margin-top: 4rem;
+}
+
+/* طريقك الأسهل لإجتياز الفحص الوطني الموحد */
+
+.para-firstsection {
+    height: 102px;
+    font-size: 17.5px;
+    line-height: 25px;
+    text-align: right;
+    color: #464547;
+}
+
+.advertis {
+    height: 409px;
+}
+
+h4 {
+    font-family: 'Alexandria';
+    font-weight: 400;
+    font-size: 35px;
+    text-align: right;
+    color: #464547;
+    margin-bottom: 1rem;
+}
+
+.btn-start {
+    width: 100%;
+    height: 56px;
+    border-radius: 5px;
+    padding: 16px;
+    background-color: #6F2877;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* specialization section  */
+
+.specialization{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin: 0 auto;
+    width: 951px;
+}
+
+.spec-title {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+    margin-top: 3.5rem;
+}
+
+.spec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    color: #464547;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.icon {
+    width: 101px;
+    height: 100px;
+}
+
+#phar,
+#nurs {
+    width: 121px;
+    height: 160px;
+    cursor: pointer;
+}
+
+#den {
+    width: 147px;
+    height: 160px;
+    cursor: pointer;
+}
+
+#dr {
+    width: 158px;
+    height: 160px;
+    cursor: pointer;
+}
+
+#arch {
+    width: 219px;
+    height: 160px;
+    cursor: pointer;
+}
+
+#it {
+    width: 242px;
+    height: 160px;
+    cursor: pointer;
+}
+
+/* last section of home Page  */
+
+.last-section {
+    margin-top: 20rem;
+}
+
+.background {
+    height: 241px;
+    width: 100%;
+    background-color: #4645470D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.para-lastsection {
+    font-size: 25px;
+    text-align: center;
+    color: #464547;
+    margin-bottom: 15px;
+}
+
+.mobile-pic {
+    width: 604px;
+    height: 540px;
+}
+
+.stores {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+/* header */
+
+header {
+    width: 1630.9px;
+    height: 320.7051086425781px;
+    left: -93.599853515625px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221440%22%20height%3D%22227%22%20viewBox%3D%220%200%201440%20227%22%20fill%3D%22none%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0%20227C147.335%20156.808%20477.5%20171.045%20695.196%20180.433C701.603%20180.709%20707.913%20180.981%20714.119%20181.247C773.417%20183.785%20829.781%20186.578%20883.151%20189.222L883.155%20189.222C1140.84%20201.989%201328.71%20211.297%201440%20171.846V0H0V227Z%22%20fill%3D%22%23B989BD%22%20fill-opacity%3D%220.5%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat no-repeat;
+    background-size: contain;
+    transform: translate(0, -30px);
+}
+
+@media(max-width: 767px) {
+    header {
+        background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22393%22%20height%3D%22188%22%20viewBox%3D%220%200%20393%20188%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M433%200C433%20142.413%20350.402%20116.708%20198.366%20103.348C120.262%2096.4849%20-17.7097%2082.037%20-20.9422%20180.781L-20.9422%20188C-21.0197%20185.529%20-21.0188%20183.123%20-20.9422%20180.781L-20.9422%200H433Z%22%20fill%3D%22%236F2877%22%2F%3E%3C%2Fsvg%3E");
+        background-repeat: no-repeat no-repeat;
+        background-size: contain;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header nav+.mobile {}
+}
+
+.mobile {
+    display: none;
+}
+
+.main-container {
+    position: fixed;
+    top: 0;
+}
+
+nav {
+    width: 85%;
+    padding-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translate(0, -50px);
+}
+
+nav ul {
+    display: flex;
+    transform: translate(200px, 0);
+}
+
+nav ul li {
+    list-style: none;
+    padding: 16px;
+    text-decoration: none;
+    margin-left: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav .logo img {
+    width: 249px;
+    height: 96px;
+}
+
+#btn {
+    color: var(--maincolor);
+    border: solid 2px var(--maincolor);
+    padding: 16px;
+    border-radius: 5px;
+    width: 166px;
+    height: 56px;
+    position: relative;
+    left: 5rem;
+    cursor: pointer;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 5rem;
+    cursor: pointer;
+    gap: 0.5rem;
+}

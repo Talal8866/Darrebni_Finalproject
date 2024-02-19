@@ -1,0 +1,22 @@
+<div class="main-container">
+    <div class="container">
+        <div class="head">
+            <h2>تعديل المعلومات الشخصية</h2>
+            <div class="user"></div>
+            <p>اسم المستخدم</p>
+        </div>
+
+        <form [formGroup]="editForm" class="edit">
+            <label for="fname"> اسم المستخدم </label>
+            <input type="text" id="uname" placeholder="اسم المستخدم" formControlName="name">
+
+            <label for="phone" class="phone">رقم الموبايل</label>
+            <input type="text" id="phone" placeholder="رقم الموبايل" formControlName="phonenumber">
+
+            <button type="submit" id="btn">حفظ التغييرات</button>
+            <a id="acc" routerLink="/.afterlogin/.course-selection" (click)="goBack()">إلغاء</a>
+        </form>
+    </div>
+</div>
+
+<!-- <a routerLink=".." (click)="goBack()">Go Back</a> -->

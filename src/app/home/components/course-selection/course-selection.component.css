@@ -1,0 +1,64 @@
+.main-container {
+    margin-top: 15rem;
+}
+
+.advertis {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.first-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 254px;
+    margin-top: 150px;
+    margin-bottom: 75px;
+}
+
+.bank {
+    background: #20C4F4;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 5px;
+    padding: 32px 64px;
+    cursor: pointer;
+}
+
+.dawrat {
+    padding: 32px 64px;
+    border-radius: 5px;
+    background-color: #6F2877;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.spec{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-bottom: 3rem;
+}
+
+.subject-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 65px;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.box {
+    text-align: center;
+    padding: 32px 24px 32px 24px;
+    border: 3px solid #6F2877;
+    color: #464547;
+    border-radius: 5px;
+    cursor: pointer;
+}
+

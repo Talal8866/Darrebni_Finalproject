@@ -1,0 +1,82 @@
+footer {
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221440%22%20height%3D%22227%22%20viewBox%3D%220%200%201440%20227%22%20fill%3D%22none%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M1440%201.52588e-05C1292.67%2070.1922%20962.5%2055.9548%20744.804%2046.5673C738.397%2046.291%20732.087%2046.0189%20725.881%2045.7533C666.583%2043.2149%20610.219%2040.4223%20556.849%2037.7781L556.845%2037.7779C299.164%2025.0112%20111.288%2015.7029%200%2055.1541V227L1440%20227V1.52588e-05Z%22%20fill%3D%22%23B9E5FB%22%20fill-opacity%3D%220.5%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    width: 1611.9px;
+    height: 320.7051086425781px;
+    position: relative;
+    left: -92.599853515625px;
+    top: 2076px;
+}
+
+nav {
+    display: none;
+}
+
+@media(max-width: 767px) {
+    footer {
+        display: none;
+    }
+
+    nav {
+        position: relative;
+        top: 2076px;
+        display: flex;
+        justify-content: center;
+        width: 394px;
+        height: 64px;
+        gap: 38px;
+        padding: 13px 25px 13px 25px;
+    }
+
+    nav img {
+        width: 57.5px;
+        height: 38px;
+    }
+}
+
+*:not(footer,nav) {
+    transform: translate(80px);
+}
+
+footer img+.top {
+    display: flex;
+    width: 444px;
+    height: 56px;
+    gap: 32px;
+    position: absolute;
+    left: 930px;
+    top: 186px;
+}
+
+footer img+.top+.bottom {
+    display: flex;
+    position: absolute;
+    left: 900px;
+    top: 230px;
+    gap: 20px;
+}
+
+footer img+.top+.bottom p {
+    width: 315px;
+    height: 56px;
+    padding: 16px;
+    border-radius: 5px;
+}
+
+footer img {
+    width: 207px;
+    height: 80px;
+    transform: translate(170px, 170px);
+}
+
+footer img+.top+.bottom img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom: 157px;
+    display: flex;
+    transform: translate(90px, 170px);
+
+}

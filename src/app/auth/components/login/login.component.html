@@ -1,0 +1,41 @@
+<form [formGroup]="loginForm" (ngSubmit)="OnSubmit()">
+    <div class="leftlogin">
+        <img src="../../../../assets/images/Login.svg" alt="">
+    </div>
+
+        <div class="rightlogin">
+            <div class="login">
+                <h4>تسجيل الدخول</h4>
+    
+                <label for="fname"> اسم المستخدم </label>
+                <input
+                 type="text"
+                 id="uname"
+                 placeholder="اسم المستخدم"
+                 formControlName="name"
+                >
+                <div>
+                    <small *ngIf="loginForm.get('name')?.errors?.['required'] && loginForm.get('name')?.dirty">username is required</small>
+                </div>
+    
+                <label for="code"> رمز الدخول </label>
+                <input type="text"
+                 id="code"
+                 placeholder="رمز الدخول"
+                 formControlName="code"
+                >
+                <div>
+                    <small *ngIf="loginForm.get('code')?.errors?.['required'] && loginForm.get('code')?.dirty">code is required</small>
+                </div>
+    
+                <button type="submit" id="btn" [routerLink]="'/afterlogin'" (click)="OnSubmit()">تسجيل الدخول</button>
+    
+                <div class="acc">
+                    <a id="acc" [routerLink]="'/register'">أنشأ حساب</a>
+                    <span>ليس لديك حساب؟</span>
+                </div>
+           </div>
+        </div>
+</form>
+
+<!-- [disabled]="loginForm.invalid" -->

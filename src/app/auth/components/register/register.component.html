@@ -1,0 +1,59 @@
+<form [formGroup]="UserForm" (ngSubmit)="OnSubmit()">
+
+    <div class="leftlogin">
+        <img src="../../../../assets/images/signup.svg" alt="">
+    </div>
+
+    <div class="rightlogin">
+        <div class="login">
+            <h4>إنشاء حساب</h4>
+
+            <label for="uname" class="uname"> اسم المستخدم </label>
+            <input type="text" id="uname" placeholder="اسم المستخدم" formControlName="username">
+            <div>
+                <small
+                    *ngIf="UserForm.get('username')?.errors?.['required'] && UserForm.get('username')?.dirty">username
+                    is required</small>
+            </div>
+
+            <label for="phone" class="phone">رقم الموبايل</label>
+            <input type="text" id="phone" placeholder="رقم الموبايل" formControlName="phonenumber">
+            <div>
+                <small
+                    *ngIf="UserForm.get('phoneNumber')?.errors?.['required'] && UserForm.get('phonenumber')?.dirty">code
+                    is required</small>
+            </div>
+
+            <label for="spec">اختر الإختصاص</label>
+
+            <div class="radio">
+                <label for="den" class="spec">طب الأسنان</label>
+                <input type="radio" id="den"  formControlName="den">
+
+                <label for="pha" class="spec">الصيدلة</label>
+                <input type="radio" id="pha" formControlName="pha">
+
+                <label for="arc" class="spec">الهندسة المعمارية</label>
+                <input type="radio" id="arc" formControlName="arc">
+
+                <label for="ite" class="spec">الهندسة المعلوماتية</label>
+                <input type="radio" id="ite" formControlName="ite">
+
+                <label for="nur" class="spec">التمريض</label>
+                <input type="radio" id="nur" formControlName="nur">
+
+                <label for="med" class="spec">الطب البشري</label>
+                <input type="radio" id="med" formControlName="med">
+            </div>
+
+            <button id="btn">إنشاء حساب</button>
+
+            <div class="acc">
+                <button id="acc" [routerLink]="'/login'">سجل دخول</button>
+                <span>لديك حساب؟</span>
+            </div>
+        </div>
+    </div>
+</form>
+
+<!-- [routerLink]="'/register'" -->
